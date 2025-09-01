@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Consultar Disciplinas – NREduTech</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/disciplinas_consulta.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">📚</div>
+      <span class="logo-text">NREduTech</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html"        class="nav-item">🏠 Início</a>
+      <a href="disciplinas_consulta.html" class="nav-item active">📂 Disciplinas</a>
+      <a href="professores.html"  class="nav-item">👩‍🏫 Professores</a>
+      <a href="recursos.html"     class="nav-item">📖 Recursos</a>
+      <a href="usuarios.html"     class="nav-item">👥 Usuários</a>
+      <a href="relatorios.html"   class="nav-item">📊 Relatórios</a>
+      <a href="laboratorios.html" class="nav-item">🔬 Laboratórios</a>
+      <a href="configuracoes.html"class="nav-item">⚙️ Configurações</a>
+      <a href="login.html"        class="nav-item logout">🔒 Sair</a>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <header class="header-section">
+      <h1>Consulta de Disciplinas</h1>
+      <p class="subtitle">Busque, filtre e visualize disciplinas cadastradas</p>
+    </header>
+
+    <div class="form-actions" style="text-align: right; margin-bottom: 20px;">
+      <a href="disciplinas_cadastro.html" class="btn-primary">+ Cadastrar Nova Disciplina</a>
+    </div>
+
+    <section class="filter-bar">
+      <input type="text" id="buscaNome" placeholder="Buscar por nome..." />
+      <select id="filtroInstituicao">
+        <option value="">Todas instituições</option>
+        <option value="colegio-estadual-irati">Colégio Estadual Irati</option>
+        <option value="escola-tecnica-irati">Escola Técnica Irati</option>
+        <option value="colegio-estadual-inacio">Colégio Estadual Inácio Martins</option>
+      </select>
+      <select id="filtroTurno">
+        <option value="">Todos os turnos</option>
+        <option value="manha">Manhã</option>
+        <option value="tarde">Tarde</option>
+        <option value="noite">Noite</option>
+      </select>
+      <button class="btn-search">🔍 Buscar</button>
+    </section>
+
+    <section class="table-section">
+      <table class="disciplinas-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Turma</th>
+            <th>Instituição</th>
+            <th>Turno</th>
+            <th>Data Cadastro</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Robótica</td>
+            <td>1º Ano Médio</td>
+            <td>Escola Técnica Irati</td>
+            <td>Noite</td>
+            <td>01/05/2025</td>
+            <td>
+              <a href="disciplinas_editar.html?id=1" class="btn-edit">✏️ Editar</a>
+              <button class="btn-delete">🗑️ Excluir</button>
+              <a class="btn-detail">🔍 Detalhar</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Professor – NREduTech</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/professores_cadastro.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">📚</div>
+      <span class="logo-text">NREduTech</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html"        class="nav-item">🏠 Início</a>
+      <a href="disciplinas_consulta.html" class="nav-item">📂 Disciplinas</a>
+      <a href="professores.html"  class="nav-item">👩‍🏫 Professores</a>
+      <a href="recursos.html"     class="nav-item">📖 Recursos</a>
+      <a href="usuarios.html"     class="nav-item">👥 Usuários</a>
+      <a href="relatorios.html"   class="nav-item">📊 Relatórios</a>
+      <a href="laboratorios.html" class="nav-item">🔬 Laboratórios</a>
+      <a href="configuracoes.html"class="nav-item">⚙️ Configurações</a>
+      <a href="login.html"        class="nav-item logout">🔒 Sair</a>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <header class="header-section">
+      <h1>Cadastro de Professor</h1>
+      <p class="subtitle">Preencha os dados para incluir um novo docente</p>
+    </header>
+
+    <section class="form-section">
+      <form class="professor-form" method="GET" action="professores.html">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="nomeProfessor">Nome Completo</label>
+            <input
+              type="text"
+              id="nomeProfessor"
+              name="nomeProfessor"
+              placeholder="Digite o nome completo"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="dataNascProfessor">Data de Nascimento</label>
+            <input
+              type="date"
+              id="dataNascProfessor"
+              name="dataNascProfessor"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="cpfProfessor">CPF</label>
+            <input
+              type="text"
+              id="cpfProfessor"
+              name="cpfProfessor"
+              placeholder="000.000.000-00"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="rgProfessor">RG</label>
+            <input
+              type="text"
+              id="rgProfessor"
+              name="rgProfessor"
+              placeholder="Digite o RG"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="emailProfessor">E-mail</label>
+            <input
+              type="email"
+              id="emailProfessor"
+              name="emailProfessor"
+              placeholder="professor@dominio.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="telefoneProfessor">Telefone</label>
+            <input
+              type="tel"
+              id="telefoneProfessor"
+              name="telefoneProfessor"
+              placeholder="(00) 00000-0000"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="registroProfessor">Registro (SIAPE/RCO)</label>
+            <input
+              type="text"
+              id="registroProfessor"
+              name="registroProfessor"
+              placeholder="Ex: SIAPE123456"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="formacaoProfessor">Formação</label>
+            <input
+              type="text"
+              id="formacaoProfessor"
+              name="formacaoProfessor"
+              placeholder="Ex: Licenciatura em Física"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="areaFormacaoProfessor">Área de Formação</label>
+            <input
+              type="text"
+              id="areaFormacaoProfessor"
+              name="areaFormacaoProfessor"
+              placeholder="Ex: Ciências Exatas"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="disciplinaVinculo">Vincular Disciplina</label>
+            <select id="disciplinaVinculo" name="disciplinaVinculo">
+              <option value="">Nenhuma</option>
+              <option value="robotica">Robótica</option>
+              <option value="fotografia">Fotografia</option>
+              <option value="jornalismo">Jornalismo</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Cadastrar Professor</button>
+        </div>
+      </form>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recursos Didáticos – NREduTech</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/recursos.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">📚</div>
+      <span class="logo-text">NREduTech</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html"        class="nav-item">🏠 Início</a>
+      <a href="disciplinas_consulta.html" class="nav-item">📂 Disciplinas</a>
+      <a href="professores.html"  class="nav-item">👩‍🏫 Professores</a>
+      <a href="recursos.html"     class="nav-item active">📖 Recursos</a>
+      <a href="usuarios.html"     class="nav-item">👥 Usuários</a>
+      <a href="relatorios.html"   class="nav-item">📊 Relatórios</a>
+      <a href="laboratorios.html" class="nav-item">🔬 Laboratórios</a>
+      <a href="configuracoes.html"class="nav-item">⚙️ Configurações</a>
+      <a href="login.html"        class="nav-item logout">🔒 Sair</a>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <header class="header-section">
+      <h1>Recursos Didáticos</h1>
+      <p class="subtitle">Visualize os materiais disponíveis para uso em sala de aula</p>
+    </header>
+
+    <div class="form-actions" style="text-align: right; margin: 20px auto; max-width: 1000px;">
+      <a href="recursos_cadastro.html" class="btn-primary">+ Cadastrar Recurso</a>
+    </div>
+
+    <section class="table-section">
+      <table class="recursos-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome do Material</th>
+            <th>Instituição</th>
+            <th>Marca</th>
+            <th>N.º de Série</th>
+            <th>Estado</th>
+            <th>Descrição (Opcional)</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Kit de Química Básica</td>
+            <td>Colégio Estadual Irati</td>
+            <td>LabMaster</td>
+            <td>QM-20231001</td>
+            <td><span class="status-funcionando">Funcionando</span></td>
+            <td>Conjunto de reagentes e vidrarias</td>
+            <td>
+              <a href="recursos_editar.html?id=1" class="btn-edit">✏️ Editar</a>
+              <button class="btn-delete">🗑️ Excluir</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Projetor Multimídia</td>
+            <td>Escola Técnica de Irati</td>
+            <td>ViewTech</td>
+            <td>PV-IR-4532</td>
+            <td><span class="status-quebrado">Quebrado</span></td>
+            <td>Projetor para apresentações em sala</td>
+            <td>
+              <a href="recursos_editar.html?id=2" class="btn-edit">✏️ Editar</a>
+              <button class="btn-delete">🗑️ Excluir</button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Régua Didática Interativa</td>
+            <td>Colégio Estadual Irati</td>
+            <td>EduTools</td>
+            <td>RD-912345</td>
+            <td><span class="status-descartado">Descartado</span></td>
+            <td>Régua com sensores para demonstrações</td>
+            <td>
+              <a href="recursos_editar.html?id=3" class="btn-edit">✏️ Editar</a>
+              <button class="btn-delete">🗑️ Excluir</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</body>
+</html>

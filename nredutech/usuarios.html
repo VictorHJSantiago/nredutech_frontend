@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usuários – NREduTech</title>
+
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/usuarios.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">📚</div>
+      <span class="logo-text">NREduTech</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html"        class="nav-item">🏠 Início</a>
+      <a href="disciplinas_consulta.html" class="nav-item">📂 Disciplinas</a>
+      <a href="professores.html"  class="nav-item">👩‍🏫 Professores</a>
+      <a href="recursos.html"     class="nav-item">📖 Recursos</a>
+      <a href="usuarios.html"     class="nav-item active">👥 Usuários</a>
+      <a href="relatorios.html"   class="nav-item">📊 Relatórios</a>
+      <a href="laboratorios.html" class="nav-item">🔬 Laboratórios</a>
+      <a href="configuracoes.html"class="nav-item">⚙️ Configurações</a>
+      <a href="login.html"        class="nav-item logout">🔒 Sair</a>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <header class="header-section">
+      <h1>Gestão de Usuários</h1>
+      <p class="subtitle">Aprovar, editar ou remover cadastros (Somente Admin)</p>
+    </header>
+
+    <div class="form-actions" style="text-align: right; margin: 20px auto; max-width: 900px;">
+      <a href="usuarios_cadastro.html" class="btn-primary">+ Cadastrar Usuário</a>
+    </div>
+
+    <section class="filter-bar">
+      <input type="text" id="buscaUsuario" placeholder="Buscar por nome ou e-mail..." />
+      <select id="filtroPapel">
+        <option value="">Todos os papéis</option>
+        <option value="aluno">Aluno</option>
+        <option value="professor">Professor</option>
+        <option value="gestor">Gestor</option>
+        <option value="administrador">Administrador</option>
+      </select>
+      <button class="btn-search">🔍 Filtrar</button>
+    </section>
+
+    <section class="table-section">
+      <table class="usuarios-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome de Usuário</th>
+            <th>E-mail</th>
+            <th>Data de Registro</th>
+            <th>Papel</th>
+            <th>Status</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>ana.pereira</td>
+            <td>ana.pereira@example.com</td>
+            <td>22/05/2025</td>
+            <td>Professor</td>
+            <td><span class="status-pendente">Pendente</span></td>
+            <td class="acao-cell">
+              <button class="btn-approve">✅</button>
+              <button class="btn-reject">❌</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>bruno.souza</td>
+            <td>bruno.souza@example.com</td>
+            <td>23/05/2025</td>
+            <td>Aluno</td>
+            <td><span class="status-pendente">Pendente</span></td>
+            <td class="acao-cell">
+              <button class="btn-approve">✅</button>
+              <button class="btn-reject">❌</button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>carla.ribeiro</td>
+            <td>carla.ribeiro@example.com</td>
+            <td>20/05/2025</td>
+            <td>Gestor</td>
+            <td><span class="status-aprovado">Aprovado</span></td>
+            <td class="acao-cell">
+              <a href="usuarios_editar.html?id=3" class="btn-edit">✏️</a>
+              <button class="btn-delete">🗑️</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</body>
+</html>

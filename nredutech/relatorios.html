@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relatórios – NREduTech</title>
+
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/relatorios.css" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">📚</div>
+      <span class="logo-text">NREduTech</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html"        class="nav-item">🏠 Início</a>
+      <a href="disciplinas_consulta.html" class="nav-item">📂 Disciplinas</a>
+      <a href="professores.html"  class="nav-item">👩‍🏫 Professores</a>
+      <a href="recursos.html"     class="nav-item">📖 Recursos</a>
+      <a href="usuarios.html"     class="nav-item">👥 Usuários</a>
+      <a href="relatorios.html"   class="nav-item">📊 Relatórios</a>
+      <a href="laboratorios.html" class="nav-item">🔬 Laboratórios</a>
+      <a href="configuracoes.html"class="nav-item">⚙️ Configurações</a>
+      <a href="login.html"        class="nav-item logout">🔒 Sair</a>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <header class="header-section">
+      <h1>Relatórios Personalizados</h1>
+      <p class="subtitle">
+        Gere relatórios por filtros como município, nível de ensino e instituição
+      </p>
+    </header>
+
+    <section class="filter-form">
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="municipio">Município:</label>
+          <select id="municipio" name="municipio">
+            <option value="">Todos</option>
+            <option value="fernandes-pinheiro">Fernandes Pinheiro</option>
+            <option value="guamiranga">Guamiranga</option>
+            <option value="inacio-martins">Inácio Martins</option>
+            <option value="irati">Irati</option>
+            <option value="mallet">Mallet</option>
+            <option value="prudentopolis">Prudentópolis</option>
+            <option value="reboucas">Rebouças</option>
+            <option value="rio-azul">Rio Azul</option>
+            <option value="teixeira-soares">Teixeira Soares</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="instituicao">Instituição:</label>
+          <select id="instituicao" name="instituicao">
+            <option value="">Todas</option>
+            <option value="colegio-estadual">Colégio Estadual</option>
+            <option value="escola-tecnica">Escola Técnica</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="nivel">Nível de Escolaridade:</label>
+          <select id="nivel" name="nivel">
+            <option value="">Todos</option>
+            <option value="fundamental2">Fundamental II</option>
+            <option value="medio">Ensino Médio</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="turmas">Tipo de Turma:</label>
+          <select id="turmas" name="turmas">
+            <option value="">Todas</option>
+            <option value="manha">Manhã</option>
+            <option value="tarde">Tarde</option>
+            <option value="noite">Noite</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="tipo-dado">Tipo de Dado:</label>
+          <select id="tipo-dado" name="tipo-dado">
+            <option value="geral">Visão Geral</option>
+            <option value="componentes">Componentes Curriculares</option>
+            <option value="recursos">Recursos Didáticos</option>
+            <option value="usuarios">Usuários Cadastrados</option>
+          </select>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-gerar">📄 Gerar Relatório</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="relatorio-preview">
+      <p><strong>Pré-visualização ou exportação de relatório aparecerá aqui...</strong></p>
+    </section>
+  </div>
+</body>
+</html>

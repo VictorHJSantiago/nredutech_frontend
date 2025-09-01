@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Disciplina – NREduTech</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/disciplinas.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">📚</div>
+      <span class="logo-text">NREduTech</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html"        class="nav-item">🏠 Início</a>
+      <a href="disciplinas_consulta.html" class="nav-item active">📂 Disciplinas</a>
+      <a href="professores.html"  class="nav-item">👩‍🏫 Professores</a>
+      <a href="recursos.html"     class="nav-item">📖 Recursos</a>
+      <a href="usuarios.html"     class="nav-item">👥 Usuários</a>
+      <a href="relatorios.html"   class="nav-item">📊 Relatórios</a>
+      <a href="laboratorios.html" class="nav-item">🔬 Laboratórios</a>
+      <a href="configuracoes.html"class="nav-item">⚙️ Configurações</a>
+      <a href="login.html"        class="nav-item logout">🔒 Sair</a>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <header class="header-section">
+      <h1>Cadastro de Disciplina</h1>
+      <p class="subtitle">Preencha os dados para cadastrar uma nova disciplina</p>
+    </header>
+
+    <section class="form-section">
+      <form class="disciplina-form" method="GET" action="disciplinas_consulta.html">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="nomeDisciplina">Nome da Disciplina</label>
+            <input
+              type="text"
+              id="nomeDisciplina"
+              name="nomeDisciplina"
+              placeholder="Digite o nome da disciplina"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="descricaoDisciplina">Descrição</label>
+            <textarea
+              id="descricaoDisciplina"
+              name="descricaoDisciplina"
+              rows="3"
+              placeholder="Descreva brevemente a disciplina"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="horarioDisciplina">Horário</label>
+            <input
+              type="text"
+              id="horarioDisciplina"
+              name="horarioDisciplina"
+              placeholder="Ex: Seg/Qua 14:00–16:00"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="dataCadastro">Data de Cadastro</label>
+            <input
+              type="date"
+              id="dataCadastro"
+              name="dataCadastro"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="instituicaoDisciplina">Instituição</label>
+            <select id="instituicaoDisciplina" name="instituicaoDisciplina" required>
+              <option value="" disabled selected>Selecione a instituição</option>
+              <option value="colegio-estadual-irati">Colégio Estadual Irati</option>
+              <option value="escola-tecnica-irati">Escola Técnica Irati</option>
+              <option value="colegio-estadual-inacio">Colégio Estadual Inácio Martins</option>
+              <option value="colegio-estadual-prudentopolis">Colégio Estadual Prudentópolis</option>
+              <option value="escola-municipal-mallet">Escola Municipal Mallet</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="serieTurma">Série / Turma</label>
+            <input
+              type="text"
+              id="serieTurma"
+              name="serieTurma"
+              placeholder="Ex: 1º Ano Médio"
+              required
+            />
+          </div>
+
+          <div class="form-group full-width">
+            <label for="listaAlunos">Lista de Alunos (separados por vírgula)</label>
+            <textarea
+              id="listaAlunos"
+              name="listaAlunos"
+              rows="3"
+              placeholder="Ex: João Silva, Maria Souza, Pedro Santos"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="totalAlunos">Total de Alunos</label>
+            <input
+              type="number"
+              id="totalAlunos"
+              name="totalAlunos"
+              min="1"
+              placeholder="Informe o total de alunos"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Cadastrar Disciplina</button>
+        </div>
+      </form>
+    </section>
+  </div>
+</body>
+</html>

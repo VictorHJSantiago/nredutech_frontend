@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professores – NREduTech</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/professores.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">📚</div>
+      <span class="logo-text">NREduTech</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html"        class="nav-item">🏠 Início</a>
+      <a href="disciplinas_consulta.html" class="nav-item">📂 Disciplinas</a>
+      <a href="professores.html"  class="nav-item active">👩‍🏫 Professores</a>
+      <a href="recursos.html"     class="nav-item">📖 Recursos</a>
+      <a href="usuarios.html"     class="nav-item">👥 Usuários</a>
+      <a href="relatorios.html"   class="nav-item">📊 Relatórios</a>
+      <a href="laboratorios.html" class="nav-item">🔬 Laboratórios</a>
+      <a href="configuracoes.html"class="nav-item">⚙️ Configurações</a>
+      <a href="login.html"        class="nav-item logout">🔒 Sair</a>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <header class="header-section">
+      <h1>Professores da Instituição</h1>
+      <p class="subtitle">
+        Lista de docentes cadastrados, com seus dados de contato e disciplinas
+      </p>
+    </header>
+
+    <div class="form-actions" style="text-align: right; margin: 20px auto; max-width: 900px;">
+      <a href="professores_cadastro.html" class="btn-primary">+ Cadastrar Professor</a>
+    </div>
+
+    <section class="table-section">
+      <table class="professores-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Matrícula</th>
+            <th>E-mail</th>
+            <th>Telefone</th>
+            <th>Disciplina</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>João da Silva</td>
+            <td>12345-TS</td>
+            <td>joao.silva@escola.edu.br</td>
+            <td>(42) 99999-1111</td>
+            <td>Matemática</td>
+            <td>
+              <a href="professores_editar.html?id=1" class="btn-edit">✏️ Editar</a>
+              <button class="btn-delete">🗑️ Excluir</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Mariana Souza</td>
+            <td>23456-TS</td>
+            <td>mariana.souza@escola.edu.br</td>
+            <td>(42) 98888-2222</td>
+            <td>Português</td>
+            <td>
+              <a href="professores_editar.html?id=2" class="btn-edit">✏️ Editar</a>
+              <button class="btn-delete">🗑️ Excluir</button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Carlos Pereira</td>
+            <td>34567-TS</td>
+            <td>carlos.pereira@escola.edu.br</td>
+            <td>(42) 97777-3333</td>
+            <td>História</td>
+            <td>
+              <a href="professores_editar.html?id=3" class="btn-edit">✏️ Editar</a>
+              <button class="btn-delete">🗑️ Excluir</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</body>
+</html>

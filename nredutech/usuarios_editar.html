@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Editar Usuário – NREduTech</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/usuarios_cadastro.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">📚</div>
+      <span class="logo-text">NREduTech</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html"        class="nav-item">🏠 Início</a>
+      <a href="disciplinas_consulta.html" class="nav-item">📂 Disciplinas</a>
+      <a href="professores.html"  class="nav-item">👩‍🏫 Professores</a>
+      <a href="recursos.html"     class="nav-item">📖 Recursos</a>
+      <a href="usuarios.html"     class="nav-item active">👥 Usuários</a>
+      <a href="relatorios.html"   class="nav-item">📊 Relatórios</a>
+      <a href="laboratorios.html" class="nav-item">🔬 Laboratórios</a>
+      <a href="configuracoes.html"class="nav-item">⚙️ Configurações</a>
+      <a href="login.html"        class="nav-item logout">🔒 Sair</a>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <header class="header-section">
+      <h1>Editar Usuário</h1>
+      <p class="subtitle">Altere os dados do usuário selecionado</p>
+    </header>
+
+    <section class="form-section">
+      <form class="usuario-form" method="GET" action="usuarios.html">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="nomeCompleto">Nome Completo</label>
+            <input
+              type="text"
+              id="nomeCompleto"
+              name="nomeCompleto"
+              value="Carlos Pereira"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="emailUsuario">E-mail</label>
+            <input
+              type="email"
+              id="emailUsuario"
+              name="emailUsuario"
+              value="carlos.pereira@example.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="senhaUsuario">Nova Senha <span class="small-text">(opcional)</span></label>
+            <input
+              type="password"
+              id="senhaUsuario"
+              name="senhaUsuario"
+              placeholder="Deixe em branco para manter a atual"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="confirmarSenha">Confirmar Senha <span class="small-text">(opcional)</span></label>
+            <input
+              type="password"
+              id="confirmarSenha"
+              name="confirmarSenha"
+              placeholder="Repita a nova senha"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="papelUsuario">Permissão (Papel)</label>
+            <select id="papelUsuario" name="papelUsuario" required>
+              <option value="aluno">Aluno</option>
+              <option value="professor">Professor</option>
+              <option value="gestor" selected>Gestor</option>
+              <option value="administrador">Administrador</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="dataNascimento">Data de Nascimento</label>
+            <input
+              type="date"
+              id="dataNascimento"
+              name="dataNascimento"
+              value="1985-07-12"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="telefoneUsuario">Telefone</label>
+            <input
+              type="tel"
+              id="telefoneUsuario"
+              name="telefoneUsuario"
+              value="(42) 97777-3333"
+            />
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Salvar Alterações</button>
+        </div>
+      </form>
+    </section>
+  </div>
+</body>
+</html>
