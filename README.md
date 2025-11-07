@@ -158,7 +158,7 @@ Este protótipo está pronto para a "próxima fase": a integração com um backe
 
 <div style="width: 100%; overflow-x: auto;">
   <table width="100%" style="border-collapse: collapse; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f9f9f9;">
-V    <tr>
+    <tr>
       <td style="padding: 20px; width: 100px; text-align: center;">
         <img src="https://avatars.githubusercontent.com/u/142981329?v=4" width="90" alt="Avatar do Victor" style="border-radius: 50%;">
       </td>
